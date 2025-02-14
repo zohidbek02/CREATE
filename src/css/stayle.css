@@ -32,6 +32,7 @@ img {
 button {
   border: none;
   cursor: pointer;
+  transition: .4s;
 }
 
 /* ............................... */
@@ -62,10 +63,19 @@ button {
   color: var(--gray-800);
 }
 
+..wrap-itme a {
+
+}
+
 .wrap-btn {
   background: linear-gradient(45deg, #ff3f3a 0%, #f75e05 100%);
   padding: 15px 30px;
   border-radius: 5px;
+}
+
+.wrap-btn:hover{
+    transform: scale(1.08);
+    opacity: .8;
 }
 
 .wrap-btn a {
@@ -130,6 +140,13 @@ button {
   color: grey;
 }
 
+.hero-button:hover{
+    transform: scale(1.08);
+}
+
+.hero-button2:hover{
+    transform: scale(1.08);
+}
 .hero-btn i {
   color: #fff;
   font-size: 20px;
@@ -223,14 +240,14 @@ button {
     right: -150px;
 }
 
+.bars{
+    display: none !important;
+}
+
 .footer-img2{
     position: absolute;
     top: -0px;
     left: -160px;
-}
-
-.wrap-box i{
-    display: none;
 }
 
 /* ><><><><><><><><><><><><><><><><><><><><>< */
@@ -323,8 +340,8 @@ button {
     .wrap-box{
         display: none;
     }
-    .wrap-box i{
-        display: flex;
+    .bars{
+        display: flex !important;
     }
     .hero-title__box{
         font-size: 15px;
